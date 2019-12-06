@@ -1,0 +1,9 @@
+server:
+  port: 998
+  servlet:
+    context-path:
+spring:
+  profiles:
+    active: dev
+  application:
+    name: gateway
