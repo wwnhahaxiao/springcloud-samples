@@ -6,4 +6,4 @@ spring:
   profiles:
     active: dev
   application:
-    name: erueka-client
+    name: eureka-client
