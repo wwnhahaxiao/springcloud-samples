@@ -4,6 +4,21 @@ server:
     context-path:
 spring:
   profiles:
-    active: dev
+    active:
   application:
     name: gateway
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      loadbalancer:
+        use404: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:996/eureka/
