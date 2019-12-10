@@ -1,9 +1,0 @@
-server:
-  port: 996
-  servlet:
-    context-path:
-spring:
-  profiles:
-    active: dev
-  application:
-    name: erueka-server
